@@ -9,7 +9,7 @@ export class HomeS15Component {
   titulo = 'Data Binding Interpolation';
   isVisible = true;
   textLarge =
-    'El Fvo-way data bindtng en Angular nos pennite modificar el valor de una propiedad de forma bidireccional, de forma que cuando nosotros modificarnos el valor de una propiedad en la vista el valor tarnbién se actualiza en el modelo de datos.';
+    'El Two-way data binding en Angular nos pennite modificar el valor de una propiedad de forma bidireccional, de forma que cuando nosotros modificarnos el valor de una propiedad en la vista el valor tarnbién se actualiza en el modelo de datos.';
 
   onVisible() {
     this.isVisible = !this.isVisible;
