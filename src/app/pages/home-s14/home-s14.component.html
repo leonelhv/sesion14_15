@@ -1,0 +1,11 @@
+<h2 class="font-bold text-3xl pt-4">Componente Padre</h2>
+<input
+  class="text-black mt-4 p-2 rounded-lg"
+  type="text"
+  [(ngModel)]="textoPadre"
+/>
+
+<app-hijo-s14 [texto]="textoPadre"></app-hijo-s14>
+<button class="bg-blue-500 py-2 px-4 rounded-lg mt-4" routerLink="/home-s15">
+  Ir a Ejercicio S-15
+</button>
