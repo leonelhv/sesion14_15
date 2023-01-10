@@ -1,1 +1,22 @@
-<p>home-s15 works!</p>
+<h1 class="text-4xl pt-4 underline">{{ titulo }}</h1>
+
+<h2 class="text-2xl">Event binding</h2>
+
+<button class="bg-blue-500 px-4 py-1 rounded-lg my-4" (click)="onVisible()">
+  {{ isVisible ? "Hide" : "Show" }}
+</button>
+
+<p [hidden]="!isVisible">
+  Event Binding, es el mecanisrno de data binding mediante el cual trabaja con
+  los eventos que se encuentran en el DOM
+</p>
+
+<div class="mt-5 flex flex-col gap-4">
+  <h2 class="text-2xl underline">Two way binding</h2>
+  <p>{{ textLarge }}</p>
+  <textarea
+    class="text-black w-96 h-44 p-3"
+    [value]="textLarge"
+    [(ngModel)]="textLarge"
+  ></textarea>
+</div>
