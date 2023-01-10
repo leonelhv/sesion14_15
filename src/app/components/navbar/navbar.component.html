@@ -1,0 +1,18 @@
+<div class="bg-blue-700 py-3 rounded-b-lg">
+  <h2 class="text-center text-3xl py-4 font-bold">Enlaces</h2>
+  <ul class="flex justify-center items-center gap-8 pb-4 flex-wrap">
+    <li *ngFor="let enlace of enlaces">
+      <a
+        [routerLink]="enlace.path"
+        [routerLinkActive]="[
+          'bg-purple-500',
+          'font-semibold',
+          'border',
+          'border-2'
+        ]"
+        class="bg-purple-300 text-black py-2 px-4 rounded-lg cursor-pointer transition-all"
+        >{{ enlace.text }}</a
+      >
+    </li>
+  </ul>
+</div>
